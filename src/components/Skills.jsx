@@ -2,31 +2,42 @@ import React from "react";
 
 const Skills = () => {
   const skills = [
+    
     {
       logo: "logo-html5",
-      level: "Advance",
+      level: "Html",
       count: 75,
     },
     {
       logo: "logo-css3",
-      level: "Beginner",
+      level: "CSS",
       count: 50,
     },
     {
-      logo: "logo-nodejs",
-      level: "Advance",
-      count: 80,
-    },
-    {
       logo: "logo-javascript",
-      level: "Advance",
+      level: "JavaScript",
       count: 75,
       
     },
     {
-      logo: "logo-react",
-      level: "Beginner",
-      count: 40,
+      logo: "logo-nodejs",
+      level: "Node js",
+      count: 80,
+    },
+    {
+      logo: "server-outline",
+      level: "MongoDB",
+      count: 80,
+    },
+    {
+      logo: "cloud-done-outline",
+      level: "AWS S3",
+      count: 75,
+    },
+    {
+      logo: "logo-buffer",
+      level: "Redis",
+      count: 85,
     },
   ];
   return (
@@ -40,7 +51,7 @@ const Skills = () => {
           {skills?.map((skill, i) => (
             <div
               key={i}
-              className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl" 
+              className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-4 rounded-xl" 
             >
               <div
                 style={{

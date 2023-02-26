@@ -3,9 +3,9 @@ import React from "react";
 import aboutImg from "../assets/images/about.png";
 const About = () => {
   const info = [
-    // { text: "Years experience", count: "00" },
+    { text: "Years exp. of as a Webdesigner", count: "01" },
+    { text: "Trainee at FunctionUp Nodejs developer", count: "06 Month" },
     { text: "Completed Projects", count: "06" },
-    { text: "Trainee at FunctionUp", count: "04 Month" },
   ];
   return (
     <section id="about" className="py-10 text-white"> 
@@ -25,27 +25,30 @@ const About = () => {
                   <div key={content.text}>
                     <h3 className="md:text-4xl text-2xl font-semibold text-white">
                       {content.count}
-                      <span className="text-cyan-600">+</span>{" "}
+                      <span className="text-cyan-600">+ </span>{" "}
                     </h3>
                     <span className="md:text-base text-xs">{content.text}</span>
+                   
                   </div>
-                ))}
-              </div>
-              <br />
-              <br />
-              <a href="./src/assets/JYOTI_CV.pdf" download>
+
+              
+                ))}     
+                <span> <a href="./src/assets/JYOTI_CV.pdf" download>
                 <button className="btn-primary">Download CV</button>
-              </a>
+              </a></span>
+              </div>
+             
+              
             </div>
           </div>
           <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center">
-            <div className="lg:w-96 h-full relative sm:w-10/12 w-11/12 max-w-sm aboutImg ">
+            {/* <div className="lg:w-96 h-full relative sm:w-10/12 w-11/12 max-w-sm aboutImg ">
               <img
                 src={aboutImg}
                 alt=""
                 className="w-full object-cover bg-cyan-600 rounded-xl"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
